@@ -1,6 +1,6 @@
 ---
 name: adspirer-analytics-web-analytics
-description: "Read Google Analytics 4, Google Search Console and Google Tag Manager — traffic, conversions, organic-search performance and tag configuration, to connect ad spend to site outcomes. Read-only."
+description: "Read Google Analytics 4, Google Search Console and Google Tag Manager — traffic, key events, organic queries and pages, URL inspection and tag configuration. Use when the user asks about sessions, conversions in GA4, organic search, rankings, indexing status or which tags are installed."
 ---
 
 # Web analytics (GA4, Search Console, Tag Manager)

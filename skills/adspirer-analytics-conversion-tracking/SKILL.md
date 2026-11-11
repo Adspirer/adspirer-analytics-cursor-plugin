@@ -1,6 +1,6 @@
 ---
 name: adspirer-analytics-conversion-tracking
-description: "Audit whether conversion tracking is set up correctly across Google, Meta, LinkedIn and other channels plus GA4 and the Meta Pixel, and grade it. Read-only inspection; it changes no tags."
+description: "Audit and grade conversion tracking across Google, Meta, LinkedIn and other channels plus GA4, Tag Manager and the Meta Pixel. Use when the user asks whether tracking is set up correctly, why conversions show zero, or whether a pixel or tag is firing. Read-only; it changes no tags."
 ---
 
 # Conversion-tracking audit

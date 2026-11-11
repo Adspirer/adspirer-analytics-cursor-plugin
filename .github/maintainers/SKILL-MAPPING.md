@@ -21,11 +21,28 @@ Routing and tool details were checked against the canonical read/write catalog o
 | Conversion tracking | adspirer-analytics-conversion-tracking | audit_conversion_tracking; read config, grade, never fix |
 | Wasted spend + competitors | adspirer-analytics-competitor-research | Read wasted-spend analysis and public competitor_ads_research |
 
+## Commands
+
+| Command | Skills it loads |
+| --- | --- |
+| adspirer-analytics-weekly-report | strategy, tools, cross-channel |
+| adspirer-analytics-tracking-audit | tools, conversion-tracking |
+| adspirer-analytics-wasted-spend | tools, competitor-research |
+
+## Consent and purchases
+
+The purchase/consent guardrail lives in the always-loaded tools contract, the rule and the agent
+(not a separate skill, which might not be selected), with a pointer in product-help. It covers
+Grok Bot and any autonomous agent: never buy, upgrade, renew or start a trial of a monthly or
+yearly plan; stop at quota limits with a pricing link; confirm quota-heavy runs. CI fails if the
+guardrail is removed.
+
 ## What is deliberately not here
 
 - No campaign creation, update, pause/resume, delete, bid, budget or targeting write of any kind.
 - No `activate_ad_accounts` / switch-account tool; picking which account to read is not a write.
 - No write actions on GA4, Search Console or Tag Manager (indexing, sitemaps, tag edits).
 - No unattended monitoring, scheduling or onboarding workflow.
+- No purchase, upgrade or billing action of any kind.
 
 Original repositories and server implementation were not changed.

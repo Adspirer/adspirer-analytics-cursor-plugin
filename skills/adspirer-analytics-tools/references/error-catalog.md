@@ -9,7 +9,9 @@
   container. Do not omit an id to bypass access checks.
 - Not connected: a web-analytics tool (GA4, Search Console, Tag Manager) returns a friendly message
   asking the user to connect it in Settings → Connections. Relay it; do not invent data.
-- Quota/rate limits: report the actual condition from get_usage_status; do not route around billing.
+- Quota/rate limits or plan paywall: report the actual condition from get_usage_status, link the
+  official pricing page and stop. Never buy, upgrade or start a trial for the user; do not route
+  around billing.
 - Missing/stale warehouse data: state the gap and freshness; do not fabricate zeros or repeatedly
   poll.
 - Multiple properties/sites/containers: relay the labelled list the tool returns and let the user

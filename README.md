@@ -2,37 +2,60 @@
 
 Read-only marketing analytics and attribution. Report ad performance across Google, Meta, TikTok, LinkedIn, Amazon, Microsoft, ChatGPT and Walmart Ads, plus GA4, Search Console and Tag Manager. Changes nothing.
 
-Query **marketing analytics** and **cross-channel advertising reporting** from Cursor — spend, clicks, conversions, CPA and ROAS by channel, attribution and funnel diagnosis, conversion-tracking audits and competitor research. A read-only alternative to Supermetrics and Windsor.ai that also carries each platform's own analytics. [Explore Adspirer Analytics](https://www.adspirer.com/analytics).
-
-Company-owned Cursor distribution package using **https://mcp.adspirer.com/analytics**.
-Requested category: **Data & Analytics**; Cursor controls final placement and verification.
-Cross-channel reporting, attribution, ROAS/CPA measurement and web-analytics reads make this a natural fit for Data & Analytics.
-This repository is not a marketplace approval or submission.
+Ask Cursor how your advertising is doing and get answers from your real accounts: spend, clicks,
+conversions, CPA and ROAS by channel, a blended cross-channel view, attribution and funnel
+diagnosis, conversion-tracking audits, wasted-spend analysis and competitor ad research.
+[Explore Adspirer Analytics](https://www.adspirer.com/analytics).
 
 ## Read-only by design
 
-This connector performs **no writes**. It cannot create, change, pause, resume, delete or spend
-anything. There is no write router and no activate/switch-account tool; every tool reports data and
-is annotated `readOnlyHint: true`. To create or optimize campaigns, use a separate Adspirer
-connector (Search Ads, Social Ads or Retail Media Ads).
+Adspirer Analytics performs **no writes**. It cannot create, change, pause, resume or delete a
+campaign, budget, tag or property, and it never spends money. To create or optimize campaigns, use
+a separate Adspirer plugin (Adspirer, Search Ads, Social Ads or Retail Ads).
 
-## What it includes
+## What's included
 
-- Eight per-platform read routers — `google_ads_analytics`, `meta_ads_analytics`, `linkedin_ads_analytics`, `tiktok_ads_analytics`, `amazon_ads_analytics`, `bing_ads_analytics` (Microsoft), `chatgpt_ads_analytics` and `walmart_ads_analytics` — exposing 316 read operations in total.
-- Three web-analytics read tools: Google Analytics (GA4), Google Search Console and Google Tag Manager.
-- Five cross-channel tools: campaign-performance cards for Google and Meta, a conversion-tracking audit, a conversion-funnel diagnosis and competitor-ads research. Several render an interactive card.
-- Ten task-specific skills, one analytics agent and one task-scoped rule.
-- Hosted HTTP MCP with browser OAuth and PKCE; no bundled server, API key or credentials.
+- **Hosted MCP connection** at `https://mcp.adspirer.com/analytics` with browser OAuth. No API key,
+  bundled server or stored credentials.
+- **Ad platforms:** Google, Meta (Facebook and Instagram), TikTok, LinkedIn, Amazon, Microsoft
+  (Bing), ChatGPT and Walmart Ads.
+- **Web analytics:** Google Analytics 4, Google Search Console and Google Tag Manager (read only).
+- **Cross-channel tools:** Google and Meta performance cards, conversion-tracking audit, funnel
+  diagnosis and competitor ad research.
+- **10 skills, 3 commands, 1 agent and 1 rule** that teach the agent to report accurately.
 
-Web-analytics tools expose read actions only; writes (submit a URL for indexing, create or edit a
-GTM tag, create a GA4 property) are refused here. competitor_ads_research reports public ad-library
-observations and cannot prove a competitor's private spend, sales or ROAS.
+| Skill | Use it for |
+| --- | --- |
+| [Cross-channel](skills/adspirer-analytics-cross-channel/SKILL.md) | Blended spend, CPA and ROAS by channel |
+| [Platform reports](skills/adspirer-analytics-platform-reports/SKILL.md) | One platform in depth: campaigns, search terms, creatives, products |
+| [Web analytics](skills/adspirer-analytics-web-analytics/SKILL.md) | GA4 traffic and key events, Search Console queries and pages, GTM tags |
+| [Attribution](skills/adspirer-analytics-attribution/SKILL.md) | Funnel drop-off and why platform and GA4 numbers disagree |
+| [Conversion tracking](skills/adspirer-analytics-conversion-tracking/SKILL.md) | Is tracking set up correctly, and what's missing |
+| [Wasted spend and competitors](skills/adspirer-analytics-competitor-research/SKILL.md) | Non-converting spend; competitors' public ads |
+| [Setup](skills/adspirer-analytics-setup/SKILL.md) | Connected accounts and properties |
+| [Strategy](skills/adspirer-analytics-strategy/SKILL.md) | Routing broad questions |
+| [Tools](skills/adspirer-analytics-tools/SKILL.md) | How the agent calls the MCP tools |
+| [Product help](skills/adspirer-analytics-product-help/SKILL.md) | Plans, quota and troubleshooting |
 
-## Connect in Cursor
+| Command | What it does |
+| --- | --- |
+| `/adspirer-analytics-weekly-report` | Last complete week across your channels, with week-over-week change |
+| `/adspirer-analytics-tracking-audit` | Grade conversion tracking across platforms, GA4, GTM and the Meta Pixel |
+| `/adspirer-analytics-wasted-spend` | Spend that isn't converting, with proposed fixes you apply yourself |
 
-Before marketplace publication, copy this repository's plugin files (including the hidden `.cursor-plugin` directory, but not `.git`) into `~/.cursor/plugins/local/adspirer-analytics`. Restart Cursor or run **Developer: Reload Window**, then open **Customize** and verify 10 skills, one agent, one rule and the MCP connection. Local plugin imports must be allowed by your organization. A symlink to a checkout outside the local-plugin directory is not supported by Cursor's documented workflow.
+## Get started
 
-For MCP-only access, merge this entry into your existing Cursor MCP configuration without replacing other servers:
+1. Install **Adspirer Analytics** from the Cursor Marketplace.
+2. Use any tool or command; Cursor opens a browser window to sign in to Adspirer.
+3. Connect your ad accounts and analytics properties at https://adspirer.ai/connections.
+
+An Adspirer account and an applicable plan are required; platform permissions and usage limits
+apply.
+
+### MCP only
+
+To use the tools without the skills, commands, agent and rule, add this to your Cursor MCP
+configuration alongside your other servers:
 
 ```json
 {
@@ -45,51 +68,31 @@ For MCP-only access, merge this entry into your existing Cursor MCP configuratio
 }
 ```
 
-MCP-only setup exposes tools but does not install the packaged skills, agent or rule. Use one connection path at a time to avoid duplicate servers.
-Complete the browser authorization flow, then connect the relevant ad accounts and analytics properties at https://adspirer.ai/connections.
-After marketplace approval, install the published Adspirer Analytics listing. Do not assume a listing exists from this repository alone.
-An Adspirer account and applicable service plan/access are required; ad-platform fees and usage limits apply.
-Never paste tokens into chat or commit OAuth credentials.
-
-## Skills
-
-- [adspirer-analytics-tools](skills/adspirer-analytics-tools/SKILL.md)
-- [adspirer-analytics-setup](skills/adspirer-analytics-setup/SKILL.md)
-- [adspirer-analytics-product-help](skills/adspirer-analytics-product-help/SKILL.md)
-- [adspirer-analytics-strategy](skills/adspirer-analytics-strategy/SKILL.md)
-- [adspirer-analytics-cross-channel](skills/adspirer-analytics-cross-channel/SKILL.md)
-- [adspirer-analytics-platform-reports](skills/adspirer-analytics-platform-reports/SKILL.md)
-- [adspirer-analytics-web-analytics](skills/adspirer-analytics-web-analytics/SKILL.md)
-- [adspirer-analytics-attribution](skills/adspirer-analytics-attribution/SKILL.md)
-- [adspirer-analytics-conversion-tracking](skills/adspirer-analytics-conversion-tracking/SKILL.md)
-- [adspirer-analytics-competitor-research](skills/adspirer-analytics-competitor-research/SKILL.md)
-
-See [SKILL-MAPPING.md](SKILL-MAPPING.md) for the skill design and [TOOL-COVERAGE.md](TOOL-COVERAGE.md) for the authenticated audit.
+Use one connection path at a time to avoid duplicate tools.
 
 ## Example prompts
 
-- “Show me spend, clicks, conversions, CPA and ROAS by channel for the last complete 30 days across Google, Meta and Amazon, with a blended total — account for currency and attribution differences.”
-- “Break down my Google Ads campaign performance for last month and flag the search terms and keywords spending without converting.”
-- “Pull my Google Search Console data: which queries and pages drive the most clicks, and where did organic impressions drop?”
-- “Walk my conversion funnel and tell me where it breaks, then check whether my GA4 and Meta Pixel conversion tracking is set up correctly.”
+- "Show me spend, clicks, conversions, CPA and ROAS by channel for the last complete 30 days across Google, Meta and Amazon, with a blended total."
+- "Break down my Google Ads campaign performance for last month and flag the search terms spending without converting."
+- "Which Search Console queries and pages drive the most clicks, and where did organic impressions drop?"
+- "Walk my conversion funnel and tell me where it breaks, then check whether my GA4 and Meta Pixel tracking is set up correctly."
+- "What ads is <competitor> running right now?"
 
 ## Safety
 
-This connector is read-only. Reporting prompts return data, never a confirmation step, because
-nothing is changed. Any request to pause, create, edit a budget, submit a URL for indexing or change
-a tag is refused with a read-only message; use a separate Adspirer connector for campaign changes.
-No unattended jobs or monitoring are configured by this package. Do not infer profits or incremental
-sales from attributed revenue, or a competitor's private figures from public ad observations.
-
-## Verification and maintenance
-
-Run `node scripts/validate-plugin.mjs` and `ruby scripts/validate-frontmatter.rb`.
-CI also validates the manifest against Cursor's official schema.
-The read/write classification and all 316 read operation names were taken from the canonical tool
-catalog on 2026-11-11. No ad-platform or analytics operation was executed, and installation inside
-Cursor remains untested.
-Updates are maintained here; there is no automatic upstream sync that can overwrite this package.
-Public marketplace publication/re-indexing is a separate Cursor review step.
+- **No writes.** Requests to pause, create, change a budget, submit a URL for indexing or edit a tag
+  are declined with a read-only message.
+- **No purchases.** The agent never buys, upgrades, renews or starts a trial of a monthly or yearly
+  subscription or any paid feature for you, including when running autonomously (for example in
+  Grok Bot) with browser or payment tools. If a quota or plan limit is reached, it stops, explains
+  the limit and links pricing; you decide.
+- **Confirmation first.** The agent asks before quota-heavy runs, such as reporting on every
+  account or property.
+- **Honest numbers.** Currency, dates, attribution window and data freshness are stated; ratios are
+  computed from totals; missing data is never reported as zero; platform-attributed revenue is not
+  treated as incremental profit; competitor research covers public ads only.
+- No scheduled jobs or background monitoring are configured by this plugin.
+- Never paste tokens into chat.
 
 ## Support
 
@@ -97,6 +100,13 @@ Public marketplace publication/re-indexing is a separate Cursor review step.
 - Documentation: https://www.adspirer.com/docs
 - Privacy: https://www.adspirer.com/privacy
 - Terms: https://www.adspirer.com/terms
+- Security: see [SECURITY.md](SECURITY.md)
 
-See [REVIEW.md](REVIEW.md) for remaining validation gates.
-See [the submission audit](docs/submission-audit.md) for comparison with recent Cursor examples, search metadata and known limitations.
+## Development
+
+Run `node scripts/validate-plugin.mjs` and `ruby scripts/validate-frontmatter.rb`. Maintainer notes,
+the tool audit and review scenarios are in [.github/maintainers](.github/maintainers/REVIEW.md).
+
+## License
+
+[MIT](LICENSE)

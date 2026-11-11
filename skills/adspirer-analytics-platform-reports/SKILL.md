@@ -1,13 +1,14 @@
 ---
 name: adspirer-analytics-platform-reports
-description: "Report one ad platform in depth — Google, Meta, TikTok, LinkedIn, Amazon, Microsoft (Bing), ChatGPT or Walmart Ads: campaign, ad group, ad, keyword and audience performance, read-only."
+description: "Report one ad platform in depth — Google, Meta, TikTok, LinkedIn, Amazon, Microsoft (Bing), ChatGPT or Walmart Ads — at campaign, ad group, ad, keyword, search-term, audience or product level. Use when the user names one platform or asks for its campaigns, search terms, creatives, placements or ACoS."
 ---
 
 # Per-platform ad analytics
 
 Load adspirer-analytics-tools. Each platform has one read router; the router name is the platform,
-so there is no platform argument. Call {"action":"list_tools"} to see that platform's real read
-operations, then get_tool_schema, then {"action":"execute",...}.
+so there is no platform argument. Start from references/common-operations.md for the usual report
+operations; call {"action":"list_tools"} when you need something else or a name is missing, then
+get_tool_schema, then {"action":"execute",...}.
 
 | Platform | Read router | Covers |
 | --- | --- | --- |

@@ -10,3 +10,6 @@ was made, and never route a write through another installed Adspirer plugin on t
 without their explicit request.
 Use evidence, name currency, dates, attribution window and freshness, and report partial failures
 and gaps honestly. For a campaign change, point the user to a separate Adspirer connector.
+Confirm with the user before quota-heavy runs. Never buy, upgrade, renew or start a trial of a
+monthly or yearly subscription or any paid feature, even when acting autonomously with browser or
+payment tools: stop at the limit, explain it, link pricing and wait for the user.

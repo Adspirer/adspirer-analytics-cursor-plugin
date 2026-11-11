@@ -1,6 +1,6 @@
 ---
 name: adspirer-analytics-strategy
-description: "Coordinate read-only marketing-analytics reporting, attribution and funnel diagnosis across ad platforms and web analytics, and route to the right Analytics skill."
+description: "Plan a read-only marketing-analytics answer and route it to the right Analytics skill. Use when a request is broad or mixed, such as 'how are my ads doing', 'where should I focus', or a question spanning several platforms, attribution and site analytics."
 ---
 
 # Marketing analytics agent

@@ -33,7 +33,7 @@ tool.
 | **Total read operations** | **316** |
 
 Each router's `{"action":"list_tools"}` returns exactly its read operations; the write operations in
-the catalog are not exposed on this hub. See [operation-index.json](docs/operation-index.json) for
+the catalog are not exposed on this hub. See [operation-index.json](operation-index.json) for
 the full names.
 
 ## Web-analytics read actions
