@@ -1,6 +1,6 @@
 ---
 name: adspirer-analytics-setup
-description: "Connect ad accounts and analytics properties (Google Analytics, Search Console, Tag Manager) for read-only reporting, and optionally establish an approved analytics workspace."
+description: "Connect and choose the ad accounts, GA4 properties, Search Console sites and Tag Manager containers to report on. Use when the user asks what is connected, which account or property to use, how to link a platform, or sees a not-connected or auth error."
 ---
 
 # Account and property setup

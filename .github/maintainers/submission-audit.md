@@ -20,18 +20,21 @@ multi-plugin catalog is needed for the existing OAuth HTTP endpoint.
 ## Checks performed
 
 - Official current Cursor manifest schema; JSON and YAML parsing.
-- Ten matching analytics-prefixed skill names and existing skill/reference links.
+- Ten matching analytics-prefixed skill names, each description stating when to use it, and existing skill/reference links.
+- Three analytics-prefixed commands; operation names cited in skills, references and commands exist in the read index.
+- Purchase/consent guardrail present in the tools contract, rule, agent and product help.
+- Maintainer docs live in .github/maintainers, not the plugin root.
 - One scoped agent and one non-global rule; no unrelated endpoint or write-tool references.
 - Nineteen top-level tools confirmed read-only; 316 read operation names taken from the canonical catalog and cross-checked against the per-router list.
-- Logo is a committed 640x640 PNG; no credential placeholders, customer data or auth cache bundled.
+- Logo is a committed square SVG with a black background plate (plus a 640x640 PNG and a light variant); no credential placeholders, customer data or auth cache bundled.
 - CI validates package shape, YAML, schema and whitespace. Copy consistency and primary search terms are regression checks.
 
 ## Search discovery
 
 Name: Adspirer Analytics. Preview: Read-only marketing analytics and attribution.
 Keywords include marketing analytics, ad analytics, cross-channel reporting, attribution, ROAS,
-CPA, per-platform analytics terms, GA4, Search Console and Supermetrics/Windsor.ai alternatives,
-plus real measurement terms.
+CPA, per-platform analytics terms, GA4, Search Console, conversion tracking and wasted spend.
+Competitor product names are deliberately not used as keywords.
 README and GitHub About should use consistent descriptions, a public analytics-product homepage and
 relevant topics. All ten skills retain the requested adspirer-analytics- prefix. Their descriptions
 explain actual tasks; do not repeat synonyms merely to stuff keywords.

@@ -1,6 +1,6 @@
 ---
 name: adspirer-analytics-attribution
-description: "Diagnose attribution and the conversion funnel across channels — where conversions are credited, where the funnel breaks, and why ads may not convert. Read-only analysis, no changes."
+description: "Diagnose attribution and the conversion funnel across channels — where conversions are credited, where the funnel drops and why ads may not convert. Use when the user asks why ads are not converting, which channel deserves credit, or why platform and GA4 numbers disagree."
 ---
 
 # Attribution and funnel diagnosis

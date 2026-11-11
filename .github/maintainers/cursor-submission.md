@@ -3,12 +3,13 @@
 - Organization name: Adspirer
 - Organization handle: adspirer
 - Plugin name: Adspirer Analytics
-- Contact email: abhi@adspirer.com
 - Support email: support@adspirer.com
 - Requested category: Data & Analytics
 - GitHub repository: https://github.com/Adspirer/adspirer-analytics-cursor-plugin
 - Website URL: https://www.adspirer.com/analytics
-- Logotype URL: https://raw.githubusercontent.com/Adspirer/adspirer-analytics-cursor-plugin/main/assets/icon.png
+- Logo URL (1:1 SVG, 640x640, white mark on black plate): https://storage.googleapis.com/adspirer-images-v1/brand/adspirer-logo-square.svg
+- Logo in repository: assets/icon.svg (manifest), assets/icon.png (PNG of the same), assets/icon-light.svg (black on white, for light pages)
+- The Analytics logo is intentionally a monochrome variant of the AD mark, distinct from the gradient icon on our other listings.
 - MCP endpoint: https://mcp.adspirer.com/analytics
 
 ## Short description / preview
@@ -24,9 +25,8 @@ conversions, cost per acquisition (CPA) and return on ad spend (ROAS) by channel
 cross-channel view, diagnose attribution and the conversion funnel, audit conversion tracking and
 find wasted spend.
 
-It is a read-only alternative to Supermetrics and Windsor.ai that also carries each ad platform's
-own analytics in one connection. The plugin includes 10 analytics skills, a specialist agent and a
-hosted MCP connection with browser-based OAuth. It performs no writes — to create or optimize
+It pulls each ad platform's own reporting into one connection. The plugin includes 10 analytics
+skills, 3 report commands, a specialist agent and a hosted MCP connection with browser-based OAuth. It performs no writes — to create or optimize
 campaigns, use a separate Adspirer connector. An Adspirer account and connected advertising or
 analytics accounts are required; platform permissions and service-plan limits apply.
 

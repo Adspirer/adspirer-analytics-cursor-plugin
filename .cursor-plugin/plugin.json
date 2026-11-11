@@ -2,6 +2,9 @@
   "name": "adspirer-analytics",
   "displayName": "Adspirer Analytics",
   "version": "1.0.0",
+  "minClientVersions": {
+    "cursor": "3.13.0"
+  },
   "description": "Read-only marketing analytics and attribution. Report ad performance across Google, Meta, TikTok, LinkedIn, Amazon, Microsoft, ChatGPT and Walmart Ads, plus GA4, Search Console and Tag Manager. Changes nothing.",
   "author": {
     "name": "Adspirer",
@@ -10,7 +13,7 @@
   "homepage": "https://www.adspirer.com/analytics",
   "repository": "https://github.com/Adspirer/adspirer-analytics-cursor-plugin",
   "license": "MIT",
-  "logo": "assets/icon.png",
+  "logo": "assets/icon.svg",
   "keywords": [
     "marketing analytics",
     "ad analytics",
@@ -28,8 +31,12 @@
     "Google Analytics",
     "GA4",
     "Search Console",
-    "Supermetrics alternative",
-    "Windsor.ai alternative"
+    "marketing reporting",
+    "Microsoft Ads analytics",
+    "Walmart Ads analytics",
+    "ChatGPT Ads analytics",
+    "conversion tracking",
+    "wasted ad spend"
   ],
   "category": "data_and_analytics",
   "tags": [
@@ -41,6 +48,7 @@
     "mcp"
   ],
   "skills": "./skills/",
+  "commands": "./commands/",
   "agents": "./agents/",
   "rules": "./rules/",
   "mcpServers": "./mcp.json"

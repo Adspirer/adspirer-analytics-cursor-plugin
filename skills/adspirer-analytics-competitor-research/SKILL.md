@@ -1,6 +1,6 @@
 ---
 name: adspirer-analytics-competitor-research
-description: "Find wasted ad spend across channels and research competitor ads running now. Read-only: it surfaces waste and public competitor activity but applies no changes and reveals no private competitor data."
+description: "Find wasted ad spend and research the ads competitors are running from public ad libraries. Use when the user asks where budget is wasted, which keywords, placements or audiences spend without converting, or what ads a named competitor is running. Never infers a competitor's private spend."
 ---
 
 # Wasted-spend and competitor research

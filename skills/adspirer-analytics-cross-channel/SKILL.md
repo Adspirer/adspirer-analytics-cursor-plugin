@@ -1,6 +1,6 @@
 ---
 name: adspirer-analytics-cross-channel
-description: "Build blended, cross-platform advertising reports — spend, clicks, conversions, CPA, ROAS and trends across Google, Meta, TikTok, LinkedIn, Amazon, Microsoft, ChatGPT and Walmart Ads."
+description: "Build blended cross-platform ad reports — spend, clicks, conversions, CPA, ROAS and trends by channel across Google, Meta, TikTok, LinkedIn, Amazon, Microsoft, ChatGPT and Walmart Ads. Use when the user asks to compare channels, wants a blended total, or asks for a weekly or monthly performance report."
 ---
 
 # Cross-channel reporting
@@ -12,7 +12,8 @@ Pull each platform through its own read router (google_ads_analytics, meta_ads_a
 linkedin_ads_analytics, tiktok_ads_analytics, amazon_ads_analytics, bing_ads_analytics,
 chatgpt_ads_analytics, walmart_ads_analytics). get_campaign_performance renders an interactive
 Google card and get_meta_campaign_performance a Meta card; the other platforms report through their
-routers.
+routers. The usual performance operation per platform is listed in
+adspirer-analytics-platform-reports (references/common-operations.md there).
 
 Normalize before combining: align the date range and, where platforms differ, the attribution
 window. Do not sum spend or revenue across different currencies without converting and stating the
