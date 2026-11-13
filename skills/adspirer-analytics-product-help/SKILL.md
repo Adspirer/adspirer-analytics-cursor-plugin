@@ -1,6 +1,6 @@
 ---
 name: adspirer-analytics-product-help
-description: "Answer questions about Adspirer Analytics itself — supported platforms, pricing, plans, usage quota, connections and troubleshooting — from current documentation. Use when the user asks about Adspirer, their plan or quota, or why a connection or report is not working."
+description: "Answer questions about Adspirer Marketing Analytics itself — supported platforms, pricing, plans, usage quota, connections and troubleshooting — from current documentation. Use when the user asks about Adspirer, their plan or quota, or why a connection or report is not working."
 ---
 
 # Product help

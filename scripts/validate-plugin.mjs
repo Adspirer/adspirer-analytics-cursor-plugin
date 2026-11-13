@@ -4,7 +4,7 @@ import path from 'node:path';
 const read = p => fs.readFileSync(p, 'utf8');
 const m = JSON.parse(read('.cursor-plugin/plugin.json'));
 assert.equal(m.name, 'adspirer-analytics');
-assert.equal(m.displayName, 'Adspirer Analytics');
+assert.equal(m.displayName, 'Adspirer Marketing Analytics');
 assert.equal(m.repository, 'https://github.com/Adspirer/adspirer-analytics-cursor-plugin');
 assert.match(m.version, /^\d+\.\d+\.\d+$/);
 assert.equal(m.homepage, 'https://www.adspirer.com/analytics');

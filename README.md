@@ -1,15 +1,15 @@
-# Adspirer Analytics for Cursor
+# Adspirer Marketing Analytics for Cursor
 
 Read-only marketing analytics and attribution. Report ad performance across Google, Meta, TikTok, LinkedIn, Amazon, Microsoft, ChatGPT and Walmart Ads, plus GA4, Search Console and Tag Manager. Changes nothing.
 
 Ask Cursor how your advertising is doing and get answers from your real accounts: spend, clicks,
 conversions, CPA and ROAS by channel, a blended cross-channel view, attribution and funnel
 diagnosis, conversion-tracking audits, wasted-spend analysis and competitor ad research.
-[Explore Adspirer Analytics](https://www.adspirer.com/analytics).
+[Explore Adspirer Marketing Analytics](https://www.adspirer.com/analytics).
 
 ## Read-only by design
 
-Adspirer Analytics performs **no writes**. It cannot create, change, pause, resume or delete a
+Adspirer Marketing Analytics performs **no writes**. It cannot create, change, pause, resume or delete a
 campaign, budget, tag or property, and it never spends money. To create or optimize campaigns, use
 a separate Adspirer plugin (Adspirer, Search Ads, Social Ads or Retail Ads).
 
@@ -45,7 +45,7 @@ a separate Adspirer plugin (Adspirer, Search Ads, Social Ads or Retail Ads).
 
 ## Get started
 
-1. Install **Adspirer Analytics** from the Cursor Marketplace.
+1. Install **Adspirer Marketing Analytics** from the Cursor Marketplace.
 2. Use any tool or command; Cursor opens a browser window to sign in to Adspirer.
 3. Connect your ad accounts and analytics properties at https://adspirer.ai/connections.
 

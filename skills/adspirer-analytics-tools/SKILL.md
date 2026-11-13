@@ -1,6 +1,6 @@
 ---
 name: adspirer-analytics-tools
-description: "Call the read-only Adspirer Analytics MCP tools correctly: pick the platform router, discover operations, fetch the live schema and execute. Use before any Adspirer Analytics tool call, or when a router, operation name or argument is unclear. This connector only reads; it has no write tools."
+description: "Call the read-only Adspirer Marketing Analytics MCP tools correctly: pick the platform router, discover operations, fetch the live schema and execute. Use before any Adspirer Marketing Analytics tool call, or when a router, operation name or argument is unclear. This connector only reads; it has no write tools."
 ---
 
 # Analytics MCP contract

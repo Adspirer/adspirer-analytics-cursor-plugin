@@ -1,6 +1,6 @@
 {
   "name": "adspirer-analytics",
-  "displayName": "Adspirer Analytics",
+  "displayName": "Adspirer Marketing Analytics",
   "version": "1.0.0",
   "minClientVersions": {
     "cursor": "3.13.0"
@@ -32,7 +32,6 @@
     "GA4",
     "Search Console",
     "marketing reporting",
-    "Microsoft Ads analytics",
     "Walmart Ads analytics",
     "ChatGPT Ads analytics",
     "conversion tracking",
