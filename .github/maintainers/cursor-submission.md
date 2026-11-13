@@ -3,6 +3,7 @@
 - Organization name: Adspirer
 - Organization handle: adspirer
 - Plugin name: Adspirer Marketing Analytics
+- Plugin slug: adspirer-marketing-analytics
 - Support email: support@adspirer.com
 - Requested category: Data & Analytics
 - GitHub repository: https://github.com/Adspirer/adspirer-analytics-cursor-plugin
