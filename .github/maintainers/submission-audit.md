@@ -31,7 +31,7 @@ multi-plugin catalog is needed for the existing OAuth HTTP endpoint.
 
 ## Search discovery
 
-Name: Adspirer Analytics. Preview: Read-only marketing analytics and attribution.
+Name: Adspirer Marketing Analytics. Preview: Read-only marketing analytics and attribution.
 Keywords include marketing analytics, ad analytics, cross-channel reporting, attribution, ROAS,
 CPA, per-platform analytics terms, GA4, Search Console, conversion tracking and wasted spend.
 Competitor product names are deliberately not used as keywords.

@@ -1,6 +1,6 @@
 # Skill design
 
-Purpose-built for the read-only Adspirer Analytics endpoint, adapted from the Adspirer Cursor
+Purpose-built for the read-only Adspirer Marketing Analytics endpoint, adapted from the Adspirer Cursor
 family (Main, Search Ads, Social Ads, Retail Ads). Because this connector performs no writes, the
 write-oriented workflows from the ad-ops packages (campaign launch, ad creative, write
 optimization, account activation) are deliberately omitted. Every skill name includes `analytics`

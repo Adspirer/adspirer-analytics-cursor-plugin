@@ -2,7 +2,7 @@
 
 ## 1.0.0
 
-- Initial company-owned Adspirer Analytics Cursor package with 10 analytics-prefixed skills, 3 report commands (weekly report, tracking audit, wasted spend), one agent and one task-scoped rule.
+- Initial company-owned Adspirer Marketing Analytics Cursor package with 10 analytics-prefixed skills, 3 report commands (weekly report, tracking audit, wasted spend), one agent and one task-scoped rule.
 - Read-only marketing analytics across Google, Meta, LinkedIn, TikTok, Amazon, Microsoft (Bing), ChatGPT and Walmart Ads, plus Google Analytics (GA4), Search Console and Tag Manager.
 - Eight per-platform read routers exposing 316 read operations, three web-analytics read tools and five cross-channel cards, all read-only.
 - Skill descriptions state when to use each skill; a per-platform common-operations reference cuts router discovery.

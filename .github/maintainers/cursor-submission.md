@@ -2,7 +2,7 @@
 
 - Organization name: Adspirer
 - Organization handle: adspirer
-- Plugin name: Adspirer Analytics
+- Plugin name: Adspirer Marketing Analytics
 - Support email: support@adspirer.com
 - Requested category: Data & Analytics
 - GitHub repository: https://github.com/Adspirer/adspirer-analytics-cursor-plugin
@@ -18,7 +18,7 @@ Read-only marketing analytics and attribution. Report ad performance across Goog
 
 ## Longer description
 
-Read-only marketing analytics inside Cursor. Adspirer Analytics reports advertising performance
+Read-only marketing analytics inside Cursor. Adspirer Marketing Analytics reports advertising performance
 across Google, Meta, TikTok, LinkedIn, Amazon, Microsoft (Bing), ChatGPT and Walmart Ads, and reads
 Google Analytics (GA4), Google Search Console and Google Tag Manager, so you can see spend, clicks,
 conversions, cost per acquisition (CPA) and return on ad spend (ROAS) by channel, build a blended
@@ -32,7 +32,7 @@ analytics accounts are required; platform permissions and service-plan limits ap
 
 ## Category request / reviewer note
 
-Please list Adspirer Analytics under Data & Analytics. It is a read-only reporting and attribution
+Please list Adspirer Marketing Analytics under Data & Analytics. It is a read-only reporting and attribution
 connector: cross-channel advertising reports, ROAS/CPA measurement, attribution and funnel
 diagnosis, conversion-tracking audits and Google Analytics / Search Console reads. It performs no
 writes. This is a separate analytics-focused plugin from our main Adspirer plugin and our ad-ops
