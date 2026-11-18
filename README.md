@@ -5,7 +5,7 @@ Read-only marketing analytics and attribution. Report ad performance across Goog
 Ask Cursor how your advertising is doing and get answers from your real accounts: spend, clicks,
 conversions, CPA and ROAS by channel, a blended cross-channel view, attribution and funnel
 diagnosis, conversion-tracking audits, wasted-spend analysis and competitor ad research.
-[Explore Adspirer Marketing Analytics](https://www.adspirer.com/analytics).
+[Explore Adspirer Marketing Analytics](https://www.adspirer.com).
 
 ## Read-only by design
 

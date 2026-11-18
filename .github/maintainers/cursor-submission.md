@@ -7,7 +7,7 @@
 - Support email: support@adspirer.com
 - Requested category: Data & Analytics
 - GitHub repository: https://github.com/Adspirer/adspirer-analytics-cursor-plugin
-- Website URL: https://www.adspirer.com/analytics
+- Website URL: https://www.adspirer.com
 - Logo URL (1:1 SVG, 640x640, white mark on black plate): https://storage.googleapis.com/adspirer-images-v1/brand/adspirer-logo-square.svg
 - Logo in repository: assets/icon.svg (manifest), assets/icon.png (PNG of the same), assets/icon-light.svg (black on white, for light pages)
 - The Analytics logo is intentionally a monochrome variant of the AD mark, distinct from the gradient icon on our other listings.
