@@ -51,7 +51,7 @@ claim verified status until Cursor grants it.
 2. Run the read-only report cases with an agreed account. Confirm that every write request (pause, create, budget, URL indexing, GTM tag edit) is refused and nothing changes.
 3. Confirm final category with Cursor. Data & Analytics is requested, not assigned by this repository.
 4. Ensure the live storefront matches submitted copy after publication/re-indexing.
-5. The Analytics homepage (https://www.adspirer.com/analytics) should be indexable; consider adding Cursor to the website's copy/title in a separate website change. No website was changed here.
+5. The homepage (https://www.adspirer.com) should be indexable; consider adding Cursor to the website's copy/title in a separate website change. No website was changed here.
 6. Published privacy/terms cover MCP integrations broadly; have the policy owner confirm coverage of the Google Analytics / Search Console / Tag Manager reads. This audit is not a legal certification.
 
 No changes were made to the server or to the original Main, Search Ads, Social Ads or Retail Ads

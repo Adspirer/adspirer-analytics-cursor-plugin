@@ -7,7 +7,7 @@ assert.equal(m.name, 'adspirer-marketing-analytics');
 assert.equal(m.displayName, 'Adspirer Marketing Analytics');
 assert.equal(m.repository, 'https://github.com/Adspirer/adspirer-analytics-cursor-plugin');
 assert.match(m.version, /^\d+\.\d+\.\d+$/);
-assert.equal(m.homepage, 'https://www.adspirer.com/analytics');
+assert.equal(m.homepage, 'https://www.adspirer.com');
 assert.ok(read('README.md').split('\n\n').includes(m.description), 'README introduction must match manifest');
 assert.ok(m.description.startsWith('Read-only marketing analytics and attribution.'));
 assert.ok(/Changes nothing\.$/.test(m.description), 'description must assert read-only');
