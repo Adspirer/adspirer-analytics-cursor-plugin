@@ -92,7 +92,7 @@ for(const file of ['README.md',...['SKILL-MAPPING.md','TOOL-COVERAGE.md','REVIEW
 }
 // Manifest logo: square SVG with a background plate and no scripts or external references.
 assert.match(m.logo,/\.svg$/,'Manifest logo should be the SVG');
-for(const f of [m.logo,'assets/icon-dark.svg']) {
+for(const f of [m.logo,'assets/icon-light.svg']) {
   const svg=read(f);
   const vb=svg.match(/viewBox="0 0 (\d+(?:\.\d+)?) (\d+(?:\.\d+)?)"/);
   assert.ok(vb && vb[1]===vb[2] && Number(vb[1])>=256, f+': viewBox must be square and at least 256');
